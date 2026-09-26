@@ -13,34 +13,34 @@ function NoteManagement({ onBackHome }) {
 
   const token = localStorage.getItem("token");
 
-  const fetchNotes = async () => {
-    try {
-      setLoading(true);
-      setError("");
-
-      const response = await fetch("http://localhost:5000/api/notes", {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      });
-
-      const data = await response.json();
-
-      if (!response.ok) {
-        throw new Error(data.message || "Failed to fetch notes");
-      }
-
-      setNotes(data);
-    } catch (err) {
-      setError(err.message);
-    } finally {
-      setLoading(false);
-    }
-  };
-
   useEffect(() => {
+    const fetchNotes = async () => {
+      try {
+        setLoading(true);
+        setError("");
+
+        const response = await fetch("http://localhost:5000/api/notes", {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        });
+
+        const data = await response.json();
+
+        if (!response.ok) {
+          throw new Error(data.message || "Failed to fetch notes");
+        }
+
+        setNotes(data);
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+
     fetchNotes();
-  }, []);
+  }, [token]);
 
   const handleViewNote = (note) => {
     setSelectedNote(note);

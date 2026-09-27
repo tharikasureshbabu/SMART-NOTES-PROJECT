@@ -30,7 +30,7 @@ function AudioInput({ onBackHome }) {
       const token = localStorage.getItem("token");
 
       const response = await axios.post(
-        "http://localhost:5000/api/transcribe",
+        "https://smart-notes-backend-7l6r.onrender.com/api/transcribe",
         formData,
         {
           headers: {
@@ -69,7 +69,7 @@ setTranscription(transcriptText);
       const token = localStorage.getItem("token");
 
       await axios.post(
-        "http://localhost:5000/api/notes",
+        "https://smart-notes-backend-7l6r.onrender.com/api/notes",
         {
           title: "Audio Summary",
           content: summary,
@@ -105,7 +105,7 @@ const handleSaveTranscription = async () => {
     const token = localStorage.getItem("token");
 
     await axios.post(
-      "http://localhost:5000/api/notes",
+      "https://smart-notes-backend-7l6r.onrender.com/api/notes",
       {
         title: "Audio Input Note",
         content: transcription,
@@ -144,7 +144,7 @@ const handleGenerateSummary = async () => {
     const token = localStorage.getItem("token");
 
     const response = await axios.post(
-      "http://localhost:5000/api/generate-summary",
+      "https://smart-notes-backend-7l6r.onrender.com/api/generate-summary",
       {
         content: transcription,
       },

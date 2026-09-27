@@ -42,7 +42,7 @@ const [translation, setTranslation] = useState("");
       console.log("TRANSLATE DATA:", translateData);
 
       const response = await axios.post(
-        "http://localhost:5000/api/translate",
+        "https://smart-notes-backend-7l6r.onrender.com/api/translate",
         translateData,
         {
           headers: {
@@ -109,7 +109,7 @@ setTranslation(
       const token = localStorage.getItem("token");
 
       await axios.post(
-        "http://localhost:5000/api/notes",
+        "https://smart-notes-backend-7l6r.onrender.com/api/notes",
         {
           title: `English to ${getLanguageName()} Translation`,
           content: translation,

@@ -34,7 +34,7 @@ function SmartSummary({ onBackHome }) {
       const token = localStorage.getItem("token");
 
       const response = await axios.post(
-        "http://localhost:5000/api/generate-summary",
+        "https://smart-notes-backend-7l6r.onrender.com/api/generate-summary",
         {
           content: content,
         },
@@ -85,7 +85,7 @@ function SmartSummary({ onBackHome }) {
       formData.append("document", file);
 
       const response = await axios.post(
-        "http://localhost:5000/api/upload-document",
+        "https://smart-notes-backend-7l6r.onrender.com/api/upload-document",
         formData,
         {
           headers: {
@@ -123,7 +123,7 @@ function SmartSummary({ onBackHome }) {
       const token = localStorage.getItem("token");
 
       await axios.post(
-        "http://localhost:5000/api/notes",
+        "https://smart-notes-backend-7l6r.onrender.com/api/notes",
         {
           title: fileName ? `Smart Summary - ${fileName}` : "Smart Summary",
           content: summary,

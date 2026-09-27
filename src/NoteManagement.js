@@ -19,7 +19,7 @@ function NoteManagement({ onBackHome }) {
         setLoading(true);
         setError("");
 
-        const response = await fetch("http://localhost:5000/api/notes", {
+        const response = await fetch("https://smart-notes-backend-7l6r.onrender.com/api/notes", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -77,7 +77,7 @@ function NoteManagement({ onBackHome }) {
       setError("");
 
       const response = await fetch(
-        `http://localhost:5000/api/notes/${selectedNote._id}`,
+        `https://smart-notes-backend-7l6r.onrender.com/api/notes/${selectedNote._id}`,
         {
           method: "PUT",
           headers: {
@@ -123,7 +123,7 @@ function NoteManagement({ onBackHome }) {
       setError("");
 
       const response = await fetch(
-        `http://localhost:5000/api/notes/${selectedNote._id}`,
+        `https://smart-notes-backend-7l6r.onrender.com/api/notes/${selectedNote._id}`,
         {
           method: "DELETE",
           headers: {

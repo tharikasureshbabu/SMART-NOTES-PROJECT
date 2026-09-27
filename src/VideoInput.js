@@ -41,7 +41,7 @@ function VideoInput({ onBackHome }) {
       const token = localStorage.getItem("token");
 
       const response = await axios.post(
-        "http://localhost:5000/api/transcribe",
+        "https://smart-notes-backend-7l6r.onrender.com/api/transcribe",
         formData,
         {
           headers: {
@@ -83,7 +83,7 @@ function VideoInput({ onBackHome }) {
       const token = localStorage.getItem("token");
 
       await axios.post(
-        "http://localhost:5000/api/notes",
+        "https://smart-notes-backend-7l6r.onrender.com/api/notes",
         {
           title: "Video Input Note",
           content: transcription,
@@ -127,7 +127,7 @@ function VideoInput({ onBackHome }) {
       const token = localStorage.getItem("token");
 
       const response = await axios.post(
-        "http://localhost:5000/api/generate-summary",
+        "https://smart-notes-backend-7l6r.onrender.com/api/generate-summary",
         {
           content: transcription,
         },
@@ -173,7 +173,7 @@ function VideoInput({ onBackHome }) {
       const token = localStorage.getItem("token");
 
       await axios.post(
-        "http://localhost:5000/api/notes",
+        "https://smart-notes-backend-7l6r.onrender.com/api/notes",
         {
           title: "Video Summary",
           content: summary,

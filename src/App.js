@@ -42,7 +42,7 @@ function App() {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/auth/login",
+        "https://smart-notes-backend-7l6r.onrender.com/api/auth/login",
         {
           email,
           password,

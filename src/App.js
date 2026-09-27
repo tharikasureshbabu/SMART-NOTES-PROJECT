@@ -10,6 +10,7 @@ import VideoInput from "./VideoInput";
 import ScreenRecording from "./ScreenRecording";
 import SmartSummary from "./SmartSummary";
 import Translate from "./Translate";
+import logo from "./logo1.jpeg";
 
 function App() {
   const [showRegister, setShowRegister] = useState(false);

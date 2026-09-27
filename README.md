@@ -1,70 +1,131 @@
-# Getting Started with Create React App
+# Smart Notes
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Smart Notes is a full-stack AI-powered note-taking and learning platform designed to help students create, organize, summarize, and translate learning content in one place.
 
-## Available Scripts
+## Live Application
 
-In the project directory, you can run:
+**Frontend:**
+https://smart-notes-project-f9xj.vercel.app
 
-### `npm start`
+**Backend:**
+https://smart-notes-backend-7l6r.onrender.com
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* User registration and login
+* Create and manage notes
+* Audio input and speech-to-text transcription
+* Video input and transcription
+* Screen recording with audio
+* PDF and Word document upload
+* AI-powered smart summarization
+* Content translation
+* View, edit, and delete saved notes
 
-### `npm test`
+## Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Frontend
 
-### `npm run build`
+* React.js
+* React Router
+* Axios
+* HTML5
+* CSS3
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Backend
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* Node.js
+* Express.js
+* MongoDB
+* Mongoose
+* JWT Authentication
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### APIs and Tools
 
-### `npm run eject`
+* AI-powered summarization
+* Speech-to-text API
+* Translation API
+* PDF text extraction
+* DOCX text extraction
+* Vercel
+* Render
+* MongoDB Atlas
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Project Structure
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```text
+smart-notes/
+│
+├── public/
+├── src/
+│   ├── components/
+│   ├── App.js
+│   ├── Home.js
+│   ├── NoteCreation.js
+│   ├── NoteManagement.js
+│   ├── AudioInput.js
+│   ├── VideoInput.js
+│   ├── ScreenRecording.js
+│   ├── SmartSummary.js
+│   └── Translate.js
+│
+├── package.json
+└── README.md
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Getting Started
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 1. Clone the Repository
 
-## Learn More
+```bash
+git clone https://github.com/tharikasureshbabu/SMART-NOTES-PROJECT.git
+cd SMART-NOTES-PROJECT
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 2. Install Dependencies
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm install
+```
 
-### Code Splitting
+### 3. Start the Application
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+npm start
+```
 
-### Analyzing the Bundle Size
+The application will run at:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```text
+http://localhost:3000
+```
 
-### Making a Progressive Web App
+## Backend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The Smart Notes backend is built using Node.js and Express.js and uses MongoDB for data storage.
 
-### Advanced Configuration
+Backend API:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```text
+https://smart-notes-backend-7l6r.onrender.com
+```
 
-### Deployment
+## Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+The application is deployed using:
 
-### `npm run build` fails to minify
+* **Frontend:** Vercel
+* **Backend:** Render
+* **Database:** MongoDB Atlas
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Project Objective
+
+The objective of Smart Notes is to make digital learning easier by bringing different types of learning content into a single platform.
+
+Users can provide content through text, audio, video, screen recordings, and documents, and transform that content into organized notes, summaries, and translated material.
+
+## Developer
+
+**Tharika Suresh Babu**
+
+B.Sc. Computer Science

@@ -18,7 +18,9 @@ function Home({
       {/* Sidebar */}
       <aside className="dashboard-sidebar">
         <div className="sidebar-brand">
-          <div className="sidebar-logo">▣</div>
+          <div className="sidebar-logo">
+            <img src="/logo1.png" alt="Smart Notes" />
+          </div>
           <span>Smart Notes</span>
         </div>
 
